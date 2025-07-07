@@ -6,27 +6,27 @@
     <title>Treact</title>
     <link rel="stylesheet" href="./styles.css" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/6c66317fd2.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
   </head>
   <body>
-    <section>
+    <section id="landing">
       <nav>
         <div class="row nav__row">
           <div class="nav__logo">
-            <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" />
+            <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" />
             <div class="nav__logo--title">Treact</div>
           </div>
           <div class="nav__links">
-            <ul>
+            <ul class="nav__links"> 
               <li><a href="#" class="nav__link">About</a></li>
               <li><a href="#" class="nav__link">Blog</a></li>
               <li><a href="#" class="nav__link">Pricing</a></li>
               <li><a href="#" class="nav__link">Contact Us</a></li>
-              <li><a href="#" class="nav__link">Login</a></li>
-              <li><a href="#" class="nav__link"> Sign Up</a></li>
+              <li><a href="#" class="nav__link login">Login</a></li>
+              <li><a href="#" class="nav__link nav__link--primary"> Sign Up</a></li>
             </ul>
           </div>
-          <button class="btn__menu" onclick="openMenu()"></button>
         </div>
       </nav>
       <header>
@@ -58,6 +58,12 @@
             </figure>
           </div>
         </div>
+      <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="header__blob">
+        <g transform="translate(300,300)">
+          <path d="M176.2,-106.9C208.7,-45.5,201.8,33.5,165.8,99.4C129.9,165.3,65,218.2,-9.2,223.5C-83.4,228.8,-166.9,186.7,-201.6,121.4C-236.4,56.2,-222.6,-32.2,-180.9,-98.9C-139.1,-165.7,-69.6,-210.8,1.2,-211.5C71.9,-212.2,143.8,-168.3,176.2,-106.9Z" fill="#6415ff"></path>
+        </g>
+      </svg>
+      
       </header>
     </section>
     <main>
@@ -144,9 +150,7 @@
               <div class="feature">
                 <div class="feature__row">
                   <figure class="figure__img--wrapper">
-                    <img
-                      src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
-                    />
+                    <img src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"/>
                   </figure>
                   <div class="feature__text">
                     <h2 class="feature__text">Fast</h2>
@@ -177,6 +181,11 @@
             </div>
           </div>
         </div>
+        <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="features__blob">
+          <g transform="translate(300,300)">
+            <path d="M125,-160.4C159.9,-146.7,184.6,-107.3,178.8,-70.9C173.1,-34.4,137,-0.8,128.8,47.3C120.7,95.5,140.6,158.2,123.8,198.4C107,238.6,53.5,256.3,5.4,248.9C-42.7,241.5,-85.4,208.9,-112.7,172.1C-140,135.3,-151.8,94.2,-146.3,59.7C-140.8,25.1,-117.9,-2.9,-104,-30.1C-90.1,-57.3,-85,-83.7,-69.1,-103.5C-53.3,-123.4,-26.6,-136.7,9.2,-149.4C45.1,-162,90.1,-174,125,-160.4Z" fill="#FFB4BC"></path>
+          </g>
+        </svg>
       </section>
       <section id="quality">
         <div class="container">
@@ -294,7 +303,6 @@
                 <div class="value">
                     <div class="value__title">
                         <figure class="value__img--wrapper">
-                           <!-- rgba(155, 44, 44, 1) -->
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(155, 44, 44, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value__img">
                             <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
                             <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
@@ -309,7 +317,7 @@
               </div>
               <button class="btn">Learn More</button>
             </div>
-            <img src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg">
+            <img class="values__img" src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg">
           </div>
         </div>
       </section>
@@ -378,16 +386,17 @@
                             <button class="plan__button"> BUY NOW </button>
                         </div>
                     </div>
-
                     </div>
+                    
                 </div>
             </div>
         </div>
+        
       </section>
       <section id="testimonials">
         <div class="container">
             <div class="row">
-                <img src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg">
+                <img src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt class="testimonial__img">
                 <div class="testimonials__description">
                     <div class="section__tag">TESTIMONIALS</div>
                     <h2 class="section__title">Our Clients <span class="purple">Love Us.</span></h2>
@@ -457,6 +466,17 @@
       </section>
     </main>
     <footer>
+      <svg viewBox="0 0 600 600" class="footer__blob--1">
+      <g transform="translate(300,300)">  
+      <path d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z" fill="rgba(80,17,204)"></path>
+</g>
+</svg>
+<svg viewBox="0 0 600 600" class="footer__blob--2">
+  <g transform="translate(300,300)">
+    <path d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z" fill="rgba(80,17,204)"></path>
+  </g>
+</svg>
+
       <div class="row footer__row">
         <div class="footer__columns">
             <div class="footer__column">
@@ -467,35 +487,62 @@
                 <a class="footer__column--link">About Us</a>
             </div>
                      <div class="footer__column">
-                <div class="footer__column--title">MAIN</div>
-                <a class="footer__column--link">Blog</a>
-                <a class="footer__column--link">FAQs</a>
-                <a class="footer__column--link">Support</a>
-                <a class="footer__column--link">About Us</a>
+                <div class="footer__column--title">PRODUCT</div>
+                <a class="footer__column--link">Log In</a>
+                <a class="footer__column--link">Personal</a>
+                <a class="footer__column--link">Business</a>
+                <a class="footer__column--link">Team</a>
             </div>
                      <div class="footer__column">
-                <div class="footer__column--title">MAIN</div>
-                <a class="footer__column--link">Blog</a>
-                <a class="footer__column--link">FAQs</a>
-                <a class="footer__column--link">Support</a>
-                <a class="footer__column--link">About Us</a>
+                <div class="footer__column--title">PRESS</div>
+                <a class="footer__column--link">Logos</a>
+                <a class="footer__column--link">Events</a>
+                <a class="footer__column--link">Stories</a>
+                <a class="footer__column--link">Office</a>
             </div>
                      <div class="footer__column">
-                <div class="footer__column--title">MAIN</div>
-                <a class="footer__column--link">Blog</a>
-                <a class="footer__column--link">FAQs</a>
-                <a class="footer__column--link">Support</a>
-                <a class="footer__column--link">About Us</a>
+                <div class="footer__column--title">TEAM</div>
+                <a class="footer__column--link">Career</a>
+                <a class="footer__column--link">Founders</a>
+                <a class="footer__column--link">Culture</a>
+                <a class="footer__column--link">Onboarding</a>
             </div>
                      <div class="footer__column">
-                <div class="footer__column--title">MAIN</div>
-                <a class="footer__column--link">Blog</a>
-                <a class="footer__column--link">FAQs</a>
-                <a class="footer__column--link">Support</a>
-                <a class="footer__column--link">About Us</a>
+                <div class="footer__column--title">LEGAL</div>
+                <a class="footer__column--link">GDPR</a>
+                <a class="footer__column--link">Privacy Policy</a>
+                <a class="footer__column--link">Terms of Service</a>
+                <a class="footer__column--link">Disclaimer</a>
             </div>
-        </div>
-      </div>  
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__bottom">
+              <div class="footer__logo">
+                <img src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt class="footer__logo--img">
+                <h5 class="footer__logo--text">Treact Inc.</h5>
+              </div>
+              <div class="footer__copyright">© 2018 Treat Inc. All Rights Reserved. </div>
+              <div class="footer__socials">
+                <a class="footer__social--link">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"> </path>
+                    </svg>
+                </a>
+                <a class="footer__social--link">
+                  <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z"> </path>
+                  </svg>
+                </a>
+                <a class="footer__social--link">
+                  <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"> </path>
+                      </svg>
+
+                </a>
+              </div>
+            </div>
+        </div>  
     </footer>
+    <div id="quick-start-container"></div>
   </body>
 </html>
