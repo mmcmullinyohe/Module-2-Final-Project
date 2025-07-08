@@ -276,6 +276,12 @@ nav {
     border: none;
 }
 
+.menu {
+    display: none;
+    font-size: x-large;
+    background-color: transparent;
+}
+
 .menu--open .modal {
     visibility: visible;
     opacity: 1;
@@ -901,7 +907,15 @@ TESTIMONIALS
     display: flex;
 }
 
-.testimonials__img, 
+.testimonial__imgs {
+    width: 50%;
+}
+
+.testimonials__img {
+    width: 50%;
+}
+
+
 .testimonials__description {
     width: 50%;
 }
@@ -1290,8 +1304,10 @@ footer {
     .plan__bottom {
         padding: 32px 64px;
     }
-    .testimonials__img {
-        width: 41.6667%;
+  
+
+    .testimonial__img{
+        width: 40%;
     }
     .testimonials__description {
         width: calc(100% - 41.6667%);
@@ -1299,6 +1315,9 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    .menu {
+        display:block;
+    }
     .nav__links {
         display: none;
     }
